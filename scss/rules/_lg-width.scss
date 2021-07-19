@@ -1,0 +1,8 @@
+/* Width's LG */
+@each $width in $sizes {
+    .w-lg-#{$width} {
+        width: $width * 1% !important
+    }
+}
+
+.w-lg-auto{width: auto !important}

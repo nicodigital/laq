@@ -1,0 +1,130 @@
+:root{
+	--btn-padding:1rem 2.5rem;
+    --btn-padding-sm:.5rem 1rem;
+    --btn-padding-lg:1.2rem 3rem;
+}
+
+.btn, [class*="btn-"]{
+	display: inline-flex;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-family: var(--body-font);
+	font-size: var(--body-size);
+	-webkit-appearance: none;
+	padding: var(--btn-padding);
+	border: 2px solid transparent;
+	line-height: var(--line-height);
+	text-decoration: none;
+	outline: none;
+	white-space: nowrap;
+	cursor: var(--cursor);
+	transition: all 0.3s ease;
+}
+
+.btn-sm{
+	font-size: 1.2rem;
+	padding: var(--btn-padding-sm)
+}
+
+.btn-lg{
+	font-size: var(--body-size);
+	padding: var(--btn-padding-lg)
+}
+
+.btn-rounded{
+	@extend .radius;
+}
+
+.btn-white{
+
+	background-color: #fff;
+	color: var(--color-1);
+
+	&:hover{
+		background-color: var(--color-1);
+		color: #fff !important;
+	}
+
+}
+
+.btn-color-1{
+	background-color: var(--color-1);
+	color: #fff;
+
+	&:hover{
+		background-color: var(--color-2);
+		color: #fff !important;
+	}
+}
+
+
+.btn-color-2{
+
+	background-color: var(--color-2);
+	color: #fff;
+
+	&:hover{
+		background-color: var(--color-1);
+		color: #fff !important;
+	}
+
+}
+
+.btn-shadow{
+
+	transform: translate3d(0,0,0);
+
+	&:hover{
+		box-shadow: 9px 12px 20px 0px #00000069;
+		transform: scale(1.02) translate3d(0,0,0);
+	}
+
+}
+
+[class*="btn-outline"],
+.btn-outline-light, 
+.btn-outline-dark {
+
+    color: #fff;
+	background: transparent;
+	border: 1px solid currentColor;
+
+    &:hover{
+		background-color:var(--color-1);
+		border: 2px solid var(--color-1);
+        color:#fff;
+    }
+
+}
+
+.btn-outline-dark{
+	color: #000;
+}
+
+.btn-blind{
+
+	padding: 0;
+	color: currentColor;
+	background-color: transparent;
+
+	&:hover{
+		color: var(--color-1);
+	}
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1064px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media( min-width:1064px) {
+
+    :root {
+        --btn-padding: 1rem 5rem; 
+	}
+	
+}
+
+

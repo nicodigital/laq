@@ -1,0 +1,50 @@
+/* Padding */
+@each $step in $steps {
+	.p-md-#{$step} {
+		padding: #{$step}rem #{$step}rem #{$step}rem #{$step}rem !important;
+	}
+}
+
+/* Padding Y */
+@each $step in $steps {
+	.py-md-#{$step} {
+		padding-top: #{$step}rem !important;
+		padding-bottom: #{$step}rem !important
+	}
+}
+
+/* Padding X */
+@each $step in $steps {
+	.px-md-#{$step} {
+		padding-left: #{$step}rem !important;
+		padding-right: #{$step}rem !important
+	}
+}
+
+/* Padding Top */
+@each $step in $steps {
+	.pt-md-#{$step} {
+		padding-top: #{$step}rem !important;
+	}
+}
+
+/* Padding Bottom */
+@each $step in $steps {
+	.pb-md-#{$step} {
+		padding-bottom: #{$step}rem !important;
+	}
+}
+
+/* Padding Left */
+@each $step in $steps {
+	.pl-md-#{$step} {
+		padding-left: #{$step}rem !important;
+	}
+}
+
+/* Padding Right */
+@each $step in $steps {
+	.pr-md-#{$step} {
+		padding-right: #{$step}rem !important;
+	}
+}

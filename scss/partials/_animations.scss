@@ -1,0 +1,138 @@
+/* Non Retina Devices Media Query */
+@media not screen and (-webkit-min-device-pixel-ratio: 2),
+  not screen and (min--moz-device-pixel-ratio: 2),
+  not screen and (-o-min-device-pixel-ratio: 2/1),
+  not screen and (min-device-pixel-ratio: 2),
+  not screen and (min-resolution: 192dpi),
+  not screen and (min-resolution: 2dppx) {
+  [class*="move-"] {
+    visibility: hidden;
+  }
+}
+
+html[data-platform="ios"][data-device="mobile"] [class*="move-"] {
+  visibility: visible !important;
+}
+
+.floating {
+  animation-name: floating;
+  -webkit-animation-name: floating;
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+} 
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    -webkit-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+  }
+
+  100% { 
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    -ms-transform: translate(-50%, 20%);
+    -webkit-transform: translate(-50%, 20%);
+    transform: translate(-50%, 20%);
+  }
+
+  100% {
+    -ms-transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+}
+
+/* Fade In */
+.fade-in {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade Out */
+.fade-out {
+  animation-name: fadeOut;
+  -webkit-animation-name: fadeOut;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoom {
+  animation: zoom;
+  animation-duration: 36s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

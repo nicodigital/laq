@@ -1,0 +1,6 @@
+/* Order */
+@each $step in $steps {
+	.order-lg-#{$step} {
+		order:#{$step};
+	}
+}

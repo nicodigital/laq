@@ -1,0 +1,50 @@
+/* Padding */
+@each $step in $steps {
+	.p-xl-#{$step} {
+		padding: #{$step}rem #{$step}rem #{$step}rem #{$step}rem !important;
+	}
+}
+
+/* Padding Y */
+@each $step in $steps {
+	.py-xl-#{$step} {
+		padding-top: #{$step}rem !important;
+		padding-bottom: #{$step}rem !important
+	}
+}
+
+/* Padding X */
+@each $step in $steps {
+	.px-xl-#{$step} {
+		padding-left: #{$step}rem !important;
+		padding-right: #{$step}rem !important
+	}
+}
+
+/* Padding Top */
+@each $step in $steps {
+	.pt-xl-#{$step} {
+		padding-top: #{$step}rem !important;
+	}
+}
+
+/* Padding Bottom */
+@each $step in $steps {
+	.pb-xl-#{$step} {
+		padding-bottom: #{$step}rem !important;
+	}
+}
+
+/* Padding Left */
+@each $step in $steps {
+	.pl-xl-#{$step} {
+		padding-left: #{$step}rem !important;
+	}
+}
+
+/* Padding Right */
+@each $step in $steps {
+	.pr-xl-#{$step} {
+		padding-right: #{$step}rem !important;
+	}
+}

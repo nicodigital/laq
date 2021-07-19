@@ -1,0 +1,8 @@
+/* Width's */
+@each $width in $sizes {
+	.w-#{$width} {
+		width: $width * 1% !important
+	}
+}
+
+.w-auto{width: auto !important}

@@ -1,0 +1,114 @@
+:root {
+  --burger-size: 3.25rem;
+}
+
+.burger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  width: var(--burger-size);
+  height: var(--burger-size);
+  right: var(--container-gap);
+  cursor: default;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+.burger-inner {
+  display: block;
+}
+
+// .line1 {
+//   margin-top: 25%;
+// }
+
+// .line2 {
+//   margin-bottom: 25%;
+// }
+
+.burger-inner {
+  width: 100%;
+  height: 4px;
+  background-color: var(--white);
+  transform: rotate(0deg);
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.header-white {
+  .burger-inner,
+  #desc-title .burger-inner {
+    background-color: var(--color-1);
+  }
+}
+
+body.header-light .burger-inner {
+  background-color: var(--color-light);
+}
+
+body.menu-in .burger-inner {
+  background-color: var(--color-1);
+}
+
+body.menu-in .burger {
+  margin-right: 5px;
+}
+
+/*
+		   * 3DX
+		   */
+
+.burger--3dx .burger-box {
+  perspective: 80px;
+}
+
+.burger--3dx .burger-inner {
+  // transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.burger--3dx .burger-inner,
+.burger--3dx .burger-inner::before {
+  // transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+body.menu-in .burger--3dx .burger-inner {
+  //transform: rotateY(45deg);
+}
+
+body.menu-in .burger--3dx .burger-inner.line1 {
+  // transform: translate3d(0, 0, 0) rotate(-45deg);
+  // top: 50%;
+  transform: rotate(-45deg);
+  position: absolute;
+ 
+}
+
+body.menu-in .burger--3dx .burger-inner.line2 {
+  // transform: translate3d(0, 0, 0) rotate(45deg);
+  // bottom: 50%;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 768px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media (max-width: 768px) {
+
+  body.menu-in .burger {
+    margin-right: 0px;
+  }
+
+}

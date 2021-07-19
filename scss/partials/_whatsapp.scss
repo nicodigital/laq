@@ -1,0 +1,132 @@
+:root {
+  --whatsapp-width: 6.5rem;
+  --whatsapp-height: 6.5rem;
+  --whatsapp-bottom: 50%;
+  --whatsapp-right: 0rem;
+  --whatsapp-icon-padding: 1rem;
+  --whatsapp-icon-font-size: 4.5rem;
+  --whatsapp-icon-right: 14%;
+}
+
+.span-whatsapp {
+  display: none;
+}
+
+.contact {
+  .span-whatsapp {
+    display: block;
+  }
+  .icon-whatsapp {
+    display: none;
+  }
+}
+
+.contacttab {
+  position: fixed;
+  webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  top: 50%;
+  right: 0;
+  z-index: 99999999;
+  transform: translate(0%, -50%); 
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--whatsapp-width);
+    height: var(--whatsapp-height);
+    padding: var(--whatsapp-icon-padding);
+    background: var(--color-1);
+    border: 2px solid var(--color-1);
+    cursor: var(--cursor);
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 15%);
+    z-index: 9999;
+  
+    span {
+      margin-right: 3rem;
+    }
+  
+    i {
+      color: var(--white);
+      font-size: var(--whatsapp-icon-font-size);
+    }
+
+    img {
+      width: var(--whatsapp-icon-font-size);
+      height: var(--whatsapp-icon-font-size);
+    }
+  
+    &:hover {
+      background-color: var(--color-2);
+      border-color: var(--color-2);
+    }
+  }
+
+}
+
+.go-down {
+  width: var(--whatsapp-icon-font-size);
+  height: var(--whatsapp-icon-font-size);
+}
+
+
+.contacttab #whatsapp {
+  // position: fixed;
+  // bottom: var(--whatsapp-bottom);
+  // right: var(--whatsapp-right);
+  // z-index: 99999;
+}
+
+.footer #whatsapp {
+  // width: var(--whatsapp-width);
+  // height: var(--whatsapp-height);
+  cursor: var(--cursor);
+
+  i {
+    //font-size: var(--whatsapp-icon-font-size);
+  }
+
+  &:hover {
+    border-color: var(--color-2);
+  }
+}
+
+
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 992px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media (min-width: 992px) {
+  :root {
+
+  }
+}
+
+
+
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1064px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media (min-width: 1064px) {
+  :root {
+    --whatsapp-width: auto;
+    --whatsapp-height: auto;
+    --whatsapp-bottom: 50%;
+    --whatsapp-right: 0rem;
+    --whatsapp-icon-width: 13%;
+    --whatsapp-icon-padding: 1rem;
+    --whatsapp-icon-right: 11%;
+    --whatsapp-icon-font-size: 2.5rem;
+  }
+}

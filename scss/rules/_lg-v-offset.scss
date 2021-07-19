@@ -1,0 +1,6 @@
+/* Vertical Offset LG */
+@each $step in $steps {
+	.v-offset-lg-#{$step} {
+		margin-top: -#{$step}rem !important;
+	}
+}

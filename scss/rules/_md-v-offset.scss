@@ -1,0 +1,6 @@
+/* Vertical Offset */
+@each $step in $steps {
+	.v-offset-md-#{$step} {
+		margin-top: -#{$step}rem !important;
+	}
+}

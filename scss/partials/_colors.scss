@@ -1,0 +1,67 @@
+$colors: (
+  "black":"#000",
+  "white":"#fff",
+  "alpha":"transparent",
+  "color-1":"#154468",
+  "color-2":"#2FA2FB",
+  "color-3":"#143352",
+  "ivory":"#F9F9F9",
+  "grey-light":"#bdbdbd",
+  "grey":"#999",
+  "grey-dark":"#333",
+  "grey-heavy":"#222",
+);
+
+:root{
+	@each $keyword, $color in $colors {
+		--#{$keyword}: #{$color};
+	}
+}
+
+/*/////////////////////// TXT COLORS ///////////////////////*/
+
+@each $keyword, $color in $colors {
+
+	/*Color*/
+	.#{$keyword}{color: var(--#{$keyword})}
+
+	/* BG Color */
+	.bg-#{$keyword}{background-color: var(--#{$keyword})}
+
+}
+
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////// 768px ///////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+
+@media( min-width:768px) {
+
+	@each $keyword, $color in $colors {
+
+		/*Color*/
+		.sm-#{$keyword}{color: var(--#{$keyword})}
+
+		/* BG Color */
+		.bg-sm-#{$keyword}{background-color: var(--#{$keyword})}
+
+	}
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1064px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media(min-width:1064px) {
+
+	@each $keyword, $color in $colors {
+
+		/*Color*/
+		.lg-#{$keyword}{color: var(--#{$keyword})}
+
+		/* BG Color */
+		.bg-lg-#{$keyword}{background-color: var(--#{$keyword})}
+
+	}
+
+}

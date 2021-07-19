@@ -1,0 +1,53 @@
+/* Gap LG */
+.gap-lg-x {
+	padding-left: var(--column-gap);
+	padding-right: var(--column-gap)
+}
+
+.gap-lg-y {
+	padding-top: var(--column-gap);
+	padding-bottom: var(--column-gap)
+}
+
+.gap-lg-left {
+	padding-left: var(--column-gap)
+}
+
+.gap-lg-right {
+	padding-right: var(--column-gap)
+}
+
+.gap-lg-top {
+	padding-top: var(--column-gap)
+}
+
+.gap-lg-bottom {
+	padding-bottom: var(--column-gap);
+}
+
+/* Container gap */
+.container-gap-lg-x {
+	padding-left: var(--container-gap);
+	padding-right: var(--container-gap)
+}
+
+.container-gap-lg-y {
+	padding-top: var(--container-gap);
+	padding-bottom: var(--container-gap)
+}
+
+.container-gap-lg-left {
+	padding-left: var(--container-gap)
+}
+
+.container-gap-lg-right {
+	padding-right: var(--container-gap)
+}
+
+.container-gap-lg-top {
+	padding-top: var(--container-gap)
+}
+
+.container-gap-lg-bottom {
+	padding-bottom: var(--container-gap);
+}

@@ -1,0 +1,44 @@
+/* Margin Y */
+@each $step in $steps {
+	.my-sm-#{$step} {
+		margin-top: #{$step}rem !important;
+		margin-bottom: #{$step}rem !important
+	}
+}
+
+/* Margin X */
+// Este margin no esta creado porque prácticamente no se utiliza
+// Si tu quieres puedes crearlo
+
+/* Margin Top */
+@each $step in $steps {
+	.mt-sm-#{$step} {
+		margin-top: #{$step}rem !important
+	}
+}
+
+/* Margin Bottom */
+@each $step in $steps {
+	.mb-sm-#{$step} {
+		margin-bottom: #{$step}rem !important
+	}
+}
+
+/* Margin Left */
+@each $step in $steps {
+	.ml-sm-#{$step} {
+		margin-left: #{$step}rem !important
+	}
+}
+
+/* Margin Right */
+@each $step in $steps {
+	.mr-sm-#{$step} {
+		margin-right: #{$step}rem !important
+	}
+}
+
+.mx-sm-auto{
+	margin-left: auto;
+	margin-right: auto;
+}

@@ -1,0 +1,47 @@
+/* Hide SM */
+.sm-hide {
+	display: none !important
+}
+
+.sm-inline-flex {
+	display: inline-flex !important
+}
+
+/* Block & Inline */
+.sm-block {
+	display: block !important
+}
+
+.sm-inline-block {
+	display: inline-block !important
+}
+
+/* Float SM */
+.pull-sm-right {
+	float: right
+}
+
+.pull-sm-left {
+	float: left
+}
+
+[data-device="tablet"] {
+
+	.tablet-wide-fit {
+		width: calc(100% + var(--container-gap)*2) !important;
+		margin-left: calc(-1 *var(--container-gap)) !important;
+	}
+
+	/* Fit SM */
+	.fit-sm-left {
+		width: calc(100% + var(--container-gap));
+		margin-left: calc(-1 * var(--container-gap))
+	}
+
+	.fit-sm-right {
+		width: calc(100% + var(--container-gap));
+		margin-right: calc(-1 * var(--container-gap))
+	}
+
+}
+

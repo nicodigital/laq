@@ -1,0 +1,275 @@
+:root{
+    --body-font: 'Inter', sans-serif;
+    --title-font: 'Canela', sans-serif;
+    --html-size:7px;
+    --body-size:1.8rem;
+    --big-title: 3rem;
+    --h1:6rem;
+    --h2:4rem;
+    --h3:2rem;
+    --small:1.8rem;
+    --line-height:1.4;
+    --font-weight-light:300;
+    --font-weight-medium:400;
+    --font-weight-bold:500;
+}
+
+body, p,.p{
+    font-size: var(--body-size)
+}
+
+.title{
+    font-family: var(--title-font);
+}
+
+.title-description {
+    color: var(--color-2);
+}
+
+.big-title{
+    font-size: var(--big-title)
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5{
+    line-height: normal;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+h1, .h1{
+    font-size: var(--h1);
+    line-height: 1.1;
+}
+
+h2, .h2{
+    font-size: var(--h2);
+    line-height: 1.2;
+}
+
+h3, .h3{
+    font-size: var(--h3);
+}
+
+small, .small{
+    font-size: var(--small);
+}
+
+.super-small {
+    font-size: 1.15rem;
+}
+
+/* Text */
+.text-light{font-weight: var(--font-weight-light) !important}
+.text-medium{font-weight: var(--font-weight-medium) !important}
+.text-bold{font-weight: var(--font-weight-bold) !important}
+
+.text-uppercase{text-transform: uppercase !important}
+.text-capitalize{text-transform: capitalize !important}
+.text-lowercase{text-transform: lowercase !important}
+
+.text-center {text-align: center !important}
+.text-left {text-align: left !important}
+.text-right {text-align: right !important}
+
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////// 375px ///////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+
+@media( min-width:375px) {
+
+    :root{
+        --html-size:8px;
+    }
+
+}  /* end 375 */
+
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////// 768px ///////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+
+@media( min-width:768px) {
+    
+    :root {
+        --html-size:9px;
+        --h1:5rem;
+    }
+
+    .sm-h1{
+        font-size: var(--h1);
+    }
+
+    .sm-h2{
+        font-size: var(--h2);
+    }
+
+    .sm-h3{
+        font-size: var(--h3);
+    }
+
+    .sm-h4{
+        font-size: var(--h4);
+    }
+
+    /* Text SM */
+    .text-sm-light{font-weight: var(--font-weight-light) !important}
+    .text-sm-medium{font-weight: var(--font-weight-medium) !important}
+    .text-sm-bold{font-weight: var(--font-weight-bold) !important}
+
+    .text-sm-uppercase{text-transform: uppercase !important}
+    .text-sm-capitalize{text-transform: capitalize !important}
+    .text-sm-lowercase{text-transform: lowercase !important}
+
+    .text-sm-center {text-align: center !important}
+    .text-sm-left {text-align: left !important}
+    .text-sm-right {text-align: right !important}
+
+} /* end 768 */
+
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////// 992px ///////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+
+@media( min-width:992px) {
+
+    .md-h1{
+        font-size: var(--h1);
+    }
+
+    .md-h2{
+        font-size: var(--h2);
+    }
+
+    .md-h3{
+        font-size: var(--h3);
+    }
+
+    .md-h4{
+        font-size: var(--h4);
+    }
+
+    /* Text MD */
+    .text-md-light{font-weight: var(--font-weight-light) !important}
+    .text-md-medium{font-weight: var(--font-weight-medium) !important}
+    .text-md-bold{font-weight: var(--font-weight-bold) !important}
+
+    .text-md-uppercase{text-transform: uppercase !important}
+    .text-md-capitalize{text-transform: capitalize !important}
+    .text-md-lowercase{text-transform: lowercase !important}
+
+    .text-md-center {text-align: center !important}
+    .text-md-left {text-align: left !important}
+    .text-md-right {text-align: right !important}
+
+} /* end 992 */
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1064px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media( min-width:1064px) {
+
+    :root{
+        --html-size:10px;
+        --body-size:1.7rem;
+        --big-title:2.5rem;
+        --h1:8rem;
+        --h2:6rem;
+        --h3:4rem;
+        --small: 1.6rem;
+    }
+
+    .lg-h1{
+        font-size: var(--h1);
+    }
+
+    .lg-h2{
+        font-size: var(--h2);
+    }
+
+    .lg-h3{
+        font-size: var(--h3);
+    }
+
+    .lg-h4{
+        font-size: var(--h4);
+    }
+
+    /* Text  LG */
+    .text-lg-light{font-weight: var(--font-weight-light) !important}
+    .text-lg-medium{font-weight: var(--font-weight-medium) !important}
+    .text-lg-bold{font-weight: var(--font-weight-bold) !important}
+
+    .text-lg-uppercase{text-transform: uppercase !important}
+    .text-lg-capitalize{text-transform: capitalize !important}
+    .text-lg-lowercase{text-transform: lowercase !important}
+
+    .text-lg-center {text-align: center !important}
+    .text-lg-left {text-align: left !important}
+    .text-lg-right {text-align: right !important}
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1280px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media( min-width:1280px) {
+
+    :root{
+        --html-size:9px;
+    }
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1440px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media( min-width:1440px) {
+
+    :root{
+        --html-size:10px;
+    }
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1920px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media( min-width:1920px) {
+
+    :root{
+        --html-size:11px;
+    }
+
+    /* Text XL */
+    .text-xl-light{font-weight: var(--font-weight-light) !important}
+    .text-xl-medium{font-weight: var(--font-weight-medium) !important}
+    .text-xl-bold{font-weight: var(--font-weight-bold) !important}
+
+    .text-xl-uppercase{text-transform: uppercase !important}
+    .text-xl-capitalize{text-transform: capitalize !important}
+    .text-xl-lowercase{text-transform: lowercase !important}
+
+    .text-xl-center {text-align: center !important}
+    .text-xl-left {text-align: left !important}
+    .text-xl-right {text-align: right !important}
+
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 2560px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media( min-width:2560px) {
+
+    :root{
+        --html-size:11px;
+    }
+
+}

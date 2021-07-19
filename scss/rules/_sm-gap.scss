@@ -1,0 +1,53 @@
+/* Gap SM */
+.gap-sm-x {
+	padding-left: var(--column-gap);
+	padding-right: var(--column-gap)
+}
+
+.gap-sm-y {
+	padding-top: var(--column-gap);
+	padding-bottom: var(--column-gap)
+}
+
+.gap-sm-left {
+	padding-left: var(--column-gap)
+}
+
+.gap-sm-right {
+	padding-right: var(--column-gap)
+}
+
+.gap-sm-top {
+	padding-top: var(--column-gap)
+}
+
+.gap-sm-bottom {
+	padding-bottom: var(--column-gap);
+}
+
+/* Container gap */
+.container-gap-sm-x {
+	padding-left: var(--container-gap);
+	padding-right: var(--container-gap)
+}
+
+.container-gap-sm-y {
+	padding-top: var(--container-gap);
+	padding-bottom: var(--container-gap)
+}
+
+.container-gap-sm-left {
+	padding-left: var(--container-gap)
+}
+
+.container-gap-sm-right {
+	padding-right: var(--container-gap)
+}
+
+.container-gap-sm-top {
+	padding-top: var(--container-gap)
+}
+
+.container-gap-sm-bottom {
+	padding-bottom: var(--container-gap);
+}

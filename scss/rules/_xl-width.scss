@@ -1,0 +1,8 @@
+/* Width's XL */
+@each $width in $sizes {
+    .w-xl-#{$width} {
+        width: $width * 1% !important
+    }
+}
+
+.w-xl-auto{width: auto !important}

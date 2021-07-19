@@ -1,0 +1,64 @@
+/* //////////////////// GRID COLUMNS ////////////////////// */
+// Este sistema de columnas consta de 12 columnas, donde cada columna
+// comienza en una linea y termina en la siguiente
+// ej: La primer columna comienza en la linea 1 y termina en la dos
+// de esta forma para tener 12 columnas tenemos 13 lineas
+/* De 1 a 13 */
+@for $i from 1 through 13 {
+	.col-1-#{$i}{grid-column: 1 / #{$i} }
+}
+
+/* De 2 a 13 */
+@for $i from 2 through 13 {
+	.col-2-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 3 a 13 */
+@for $i from 3 through 13 {
+	.col-3-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 4 a 13 */
+@for $i from 4 through 13 {
+	.col-4-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 4 a 13 */
+@for $i from 4 through 13 {
+	.col-4-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 5 a 13 */
+@for $i from 5 through 13 {
+	.col-5-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 6 a 13 */
+@for $i from 6 through 13 {
+	.col-6-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 7 a 13 */
+@for $i from 7 through 13 {
+	.col-7-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 8 a 13 */
+@for $i from 8 through 13 {
+	.col-8-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 9 a 13 */
+@for $i from 9 through 13 {
+	.col-9-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 10 a 13 */
+@for $i from 10 through 13 {
+	.col-10-#{$i}{grid-column: 1  / #{$i} }
+}
+
+/* De 11 a 13 */
+@for $i from 11 through 13 {
+	.col-11-#{$i}{grid-column: 1  / #{$i} }
+}

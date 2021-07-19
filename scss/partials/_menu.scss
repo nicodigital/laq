@@ -1,0 +1,147 @@
+:root {
+  --menu-position: fixed;
+  --menu-size: 100vh;
+  --menu-translate: 100%;
+  --menu-font-size: 5rem;
+}
+
+#menu {
+  position: var(--menu-position);
+  width: 100%;
+  height: var(--menu-size);
+  top: 0;
+  left: 0;
+  background-color: var(--white);
+  padding: var(--container-gap);
+
+  transform: translateX(45%);
+  opacity: 0;
+  pointer-events: none;
+  z-index: -1;
+
+ .nav-wrapper a {
+   font-size: var(--menu-font-size) !important;
+    color: var(--color-1);
+    cursor: var(--cursor);
+
+    &:hover {
+      color: var(--grey-light);
+    }
+  }
+
+  .menu-brand {
+    position: absolute;
+    left: var(--container-gap);
+    top: 2rem;
+    width: var(--brand-size);
+    opacity: 0;
+  }
+}
+
+body.menu-in #menu {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: initial;
+  z-index: inherit;
+}
+
+.brand {
+  position: relative;
+
+  img {
+    position: absolute;
+    width: auto;
+  }
+
+  img:last-child {
+    opacity: 0;
+  }
+}
+
+body.menu-in .brand img:first-child {
+  visibility: hidden;
+  opacity: 0;
+}
+body.menu-in .brand img:last-child {
+  visibility: visible;
+  opacity: 1;
+}
+
+#desc-title {
+  color: var(--white);
+  transition: color 0.3s ease;
+
+  span {
+    display: none;
+  }
+
+}
+
+.header-white {
+  .brand img:first-child {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .brand img:last-child {
+    visibility: visible;
+    opacity: 1;
+  }
+  #desc-title {
+    color: var(--color-1);
+  }
+
+}
+
+body.menu-in #desc-title {
+  color: var(--color1);
+  padding-right: 5px;
+}
+
+.nav-wrapper {
+  width: min-content;
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 768px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media (min-width: 768px) {
+  body.menu-in #menu {
+    // transform: translateX(25%);
+  }
+
+  #desc-title {
+    span {
+      display: block;
+      transition: all 0.3s ease;
+    } 
+  }
+
+}
+
+/*///////////////////////////////////////////////////////////*/
+/*///////////////////////// 992px ///////////////////////////*/
+/*///////////////////////////////////////////////////////////*/
+
+@media (min-width: 992px) {
+  body.menu-in #menu {
+    // transform: translateX(50%);
+  }
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1064px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media (min-width: 1064px) {
+    :root {
+      --menu-font-size: 4rem;
+    }
+
+    body:not(.menu-in) {
+      #desc-title span{
+        padding-left: 4rem
+      }
+    }
+
+}

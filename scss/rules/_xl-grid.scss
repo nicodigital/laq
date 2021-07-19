@@ -1,0 +1,141 @@
+/* Grid */
+.xl-grid {
+	display: grid
+}
+
+.grid-xl-fit-row{
+    grid-template-rows: 1fr;
+}
+
+.grid-xl-auto-rows{
+    grid-auto-rows: auto;
+}
+
+.grid-xl-auto-columns{
+    grid-auto-columns: auto;
+}
+
+.justify-items-xl-start{
+    justify-items: flex-start;
+}
+
+.justify-items-xl-center{
+    justify-items: center;
+}
+
+.justify-items-xl-end{
+    justify-items: flex-end;
+}
+
+/* Grid individual columns */
+@for $i from 1 through 12 {
+	.grid-col-xl-#{$i} {
+		grid-template-columns: repeat($i, 1fr)
+	}
+}
+
+/* Grid Gap's*/
+@for $i from 0 through 10 {
+	.grid-gap-xl-#{$i} {
+        grid-gap: #{$i}rem;
+		gap: #{$i}rem
+	}
+}
+
+/* Grid Column Gap's*/
+@for $i from 0 through 10 {
+    .grid-xl-col-gap-#{$i} {
+        grid-column-gap: #{$i}rem
+    }
+}
+
+/* Grid Row Gap's*/
+@for $i from 0 through 10 {
+    .grid-xl-row-gap-#{$i} {
+        grid-row-gap: #{$i}rem
+    }
+}
+
+/* /////////////////////// GRID COLUMNS xl ////////////////////////// */
+
+/* De 1 a 13 */
+@for $i from 1 through 13 {
+    .col-xl-1-#{$i} {
+        grid-column: 1 / #{$i}
+    }
+}
+
+/* De 2 a 13 */
+@for $i from 2 through 13 {
+    .col-xl-2-#{$i} {
+        grid-column: 2 / #{$i}
+    }
+}
+
+/* De 3 a 13 */
+@for $i from 3 through 13 {
+    .col-xl-3-#{$i} {
+        grid-column: 3 / #{$i}
+    }
+}
+
+/* De 4 a 13 */
+@for $i from 4 through 13 {
+    .col-xl-4-#{$i} {
+        grid-column: 4 / #{$i}
+    }
+}
+
+/* De 5 a 13 */
+@for $i from 5 through 13 {
+    .col-xl-5-#{$i} {
+        grid-column: 5 / #{$i}
+    }
+}
+
+/* De 6 a 13 */
+@for $i from 6 through 13 {
+    .col-xl-6-#{$i} {
+        grid-column: 6 / #{$i}
+    }
+}
+
+/* De 7 a 13 */
+@for $i from 7 through 13 {
+    .col-xl-7-#{$i} {
+        grid-column: 7 / #{$i}
+    }
+}
+
+/* De 8 a 13 */
+@for $i from 8 through 13 {
+    .col-xl-8-#{$i} {
+        grid-column: 8 / #{$i}
+    }
+}
+
+/* De 9 a 13 */
+@for $i from 9 through 13 {
+    .col-xl-9-#{$i} {
+        grid-column: 9 / #{$i}
+    }
+}
+
+/* De 10 a 13 */
+@for $i from 10 through 13 {
+    .col-xl-10-#{$i} {
+        grid-column: 10 / #{$i}
+    }
+}
+
+/* De 11 a 13 */
+@for $i from 11 through 13 {
+    .col-xl-11-#{$i} {
+        grid-column: 11 / #{$i}
+    }
+}
+
+/* De 12 a 13 */
+.col-xl-12-13 {
+    grid-column: 12 / 13
+}

@@ -1,0 +1,10 @@
+/* Reset */
+*{box-sizing: border-box}
+body,figure{margin: 0}
+p,h1,h2,h3,h4,h5,h6,ul{margin-top: 0}
+img{vertical-align: bottom; width: 100%}
+a{color:var(--color-1);text-decoration: none;cursor: var(--cursor)}
+ul{padding-left: 2rem}
+hr {background:rgba(255,255,255,0.5);height:1px;border:none}
+[id]{scroll-margin-top: 5ex}
+p{margin-bottom: 2rem}

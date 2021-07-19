@@ -1,0 +1,39 @@
+:root{
+	--icon-size-sm:1rem;
+	--icon-size:3rem;
+	--icon-size-lg:5rem;
+	--icon-size-xl:7rem;
+}
+
+.icon-sm{
+	font-size: var(--icon-size-sm);
+}
+
+.icon{
+	font-size: var(--icon-size);
+}
+
+.icon-lg{
+	font-size: var(--icon-size-lg);
+}
+
+.icon-xl{
+	font-size: var(--icon-size-xl);
+}
+
+/*//////////////////////////////////////////////////////////*/
+/*///////////////////////// 1064px /////////////////////////*/
+/*//////////////////////////////////////////////////////////*/
+
+@media( min-width:1064px) {
+
+	:root{
+		--icon-size-sm:2.2rem;
+		--icon-size:3rem;
+		--icon-size-lg:5rem;
+		--icon-size-xl:7rem;
+	}
+
+
+}
+/* end 1064 */

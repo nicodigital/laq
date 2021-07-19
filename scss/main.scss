@@ -1,0 +1,30 @@
+/*
+Theme Name: GridBox
+Theme URI: http://gridbox.com.uy
+Author: Nicolás Gonzalez
+Author URI: http://nicowebsite.com/
+Description: Theme developed specifically to GridBox.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: gridbox
+*/
+@import  "./partials/reset";
+@import  "./partials/mixins";
+@import  "./partials/structure";
+@import  "./partials/fonts";
+@import  "./partials/colors";
+@import  "./partials/typography";
+@import  "./partials/responsive-helpers";
+@import  "./partials/menu";
+@import  "./partials/buttons";
+@import  "./partials/icons";
+@import  "./partials/tools";
+@import  "./partials/burger";
+@import  "./partials/swiper";
+@import  "./partials/whatsapp";
+@import  "./partials/forms";
+@import  "./partials/main-slider";
+@import  "./partials/modal";
+@import  "./partials/custom";
+@import  "./partials/animations"; 

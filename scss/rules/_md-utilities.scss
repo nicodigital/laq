@@ -1,0 +1,41 @@
+/* Hide MD */
+.md-hide {
+	display: none !important
+}
+
+.md-inline-flex {
+	display: inline-flex !important
+}
+
+/* Block & Inline */
+.md-block {
+	display: block !important
+}
+
+.md-inline-block {
+	display: inline-block !important
+}
+
+/*Float MD*/
+.pull-md-right {
+    float: right
+}
+
+.pull-md-left {
+    float: left
+}
+
+[data-device="tablet"] {
+
+	/* Fit SM */
+	.fit-md-left {
+		width: calc(100% + var(--container-gap));
+		margin-left: calc(-1 * var(--container-gap))
+	}
+
+	.fit-md-right {
+		width: calc(100% + var(--container-gap));
+		margin-right: calc(-1 * var(--container-gap))
+	}
+
+}

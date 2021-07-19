@@ -1,0 +1,27 @@
+$breakpoints: ( "xs": "320", "sm": "768px", "md": "992px", "lg": "1064px", "xl": "1680px");
+
+/* Start testing */
+@each $keyword, $point in $breakpoints {
+
+	$key: null;
+
+	@media(min-width: #{$point} ) {
+
+		@if $keyword == xs {
+			$key: null;
+		}@else{
+			$key: #{$keyword}-;
+		}
+
+		/* Width's */
+		@each $width in $sizes {
+			.w-#{$key}#{$width} {
+				width: $width * 1% !important
+			}
+		}
+
+	}
+
+}
+
+/* End testing */
